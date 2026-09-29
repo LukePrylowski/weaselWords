@@ -30,7 +30,7 @@ $_SESSION['csrf'] ??= bin2hex(random_bytes(24));
       <div class="play-bottom"><button class="primary" id="next-player" disabled>Następny gracz <span>→</span></button><p class="footnote" id="card-hint">Odkryj kartę, zapamiętaj i zakryj.</p></div>
     </section>
     <section id="ready" class="play-screen centered" hidden><div class="big-symbol">✳</div><span class="eyebrow">WSZYSCY ZNAJĄ SWOJĄ ROLĘ</span><h1>Zaczyna się<br><span class="lime">podejrzewanie.</span></h1><p>Po kolei podajcie skojarzenie z hasłem.<br>Oszust improwizuje. Kto się zdradzi?</p><button class="primary" id="start">START <span>▶</span></button></section>
-    <section id="timer" class="play-screen centered" hidden><span class="eyebrow" id="timer-status">GRA TRWA · OBSERWUJ EKIPĘ</span><h1>Kto kręci?</h1><div class="clock" id="clock" role="timer">00:00</div><p id="timer-copy">Słuchaj skojarzeń. Wypatruj blefu.</p><button class="primary" id="stop">Stop <span>■</span></button><button class="secondary" id="another-game">Nowa gra <span>↻</span></button><button class="text-button" id="edit-room">Zmień graczy lub kategorie</button></section>
+    <section id="timer" class="play-screen centered" hidden><span class="eyebrow" id="timer-status">GRA TRWA · OBSERWUJ EKIPĘ</span><h1>Kto kręci?</h1><div class="clock" id="clock" role="timer">00:00</div><p id="timer-copy">Słuchaj skojarzeń. Wypatruj blefu.</p><button class="primary" id="stop">Stop <span>■</span></button><button class="secondary" id="another-game">Nowa gra <span>↻</span></button><button class="secondary" id="edit-room">Powrót do pokoju <span aria-hidden="true">↩</span></button></section>
     <footer>MAŁA GRA. WIELKIE PODEJRZENIA. <span>✦</span></footer>
   </main>
 </body>

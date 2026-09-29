@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#171426">
+  <title>Gry imprezowe — wybierz grę</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #171426; color: #faf8ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; background: radial-gradient(ellipse at top right, #49305f, transparent 65%); }
+    main { max-width: 680px; margin: auto; padding: max(48px, env(safe-area-inset-top)) 22px max(32px, env(safe-area-inset-bottom)); }
+    .symbol { color: #d7ff72; font-size: 64px; }
+    .eyebrow { color: #c3b0e2; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+    h1 { font-size: clamp(38px, 9vw, 60px); line-height: 1.08; letter-spacing: -2px; margin: 20px 0; }
+    h1 span { color: #d7ff72; }
+    p { color: #b8afc9; line-height: 1.6; }
+    nav { display: grid; gap: 16px; margin-top: 36px; }
+    .game { display: flex; align-items: center; gap: 16px; padding: 24px; min-height: 100px; border: 1px solid #584568; border-radius: 20px; background: #2b223b; color: inherit; text-decoration: none; transition: transform .15s, border-color .15s; -webkit-tap-highlight-color: transparent; }
+    .game:hover { transform: translateY(-3px); border-color: #d7ff72; }
+    .game:focus-visible { outline: 3px solid #d7ff72; outline-offset: 5px; }
+    .icon { font-size: 36px; }
+    .name { display: block; font-size: 23px; font-weight: 750; }
+    .description { display: block; margin-top: 5px; color: #b8afc9; font-size: 13px; line-height: 1.5; }
+    .arrow { margin-left: auto; color: #d7ff72; font-size: 28px; }
+    footer { margin-top: 44px; color: #998aaa; font-size: 11px; letter-spacing: 1px; }
+    @media (max-width: 360px) { .game { padding: 18px; gap: 12px; } .name { font-size: 21px; } }
+    @media (prefers-reduced-motion: reduce) { .game { transition: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="symbol" aria-hidden="true">✳</div>
+    <p class="eyebrow">DOBRA EKIPA. DOBRA ZABAWA.</p>
+    <h1>Wybierz grę.<br><span>Rozkręć imprezę.</span></h1>
+    <p>Zbierz znajomych i zaczynajcie!</p>
+    <nav aria-label="Dostępne gry">
+      <!-- Kolejne gry: skopiuj element a i zmień href, ikonę, nazwę oraz opis. -->
+      <a class="game" href="weaselWords/">
+        <span class="icon" aria-hidden="true">👀</span>
+        <span><span class="name">Kto kręci?</span><span class="description">Tajne hasło, jeden oszust i mnóstwo podejrzeń. Od 3 do 20 graczy.</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </nav>
+    <footer>MAŁA GRA. WIELKIE EMOCJE.</footer>
+  </main>
+</body>
+</html>
