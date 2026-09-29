@@ -41,7 +41,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $j = random_int(0, $i);
             [$players[$i], $players[$j]] = [$players[$j], $players[$i]];
         }
-        $room = ['code' => $room['code'], 'players' => array_values($players), 'categories' => array_values(array_unique($categories)), 'phase' => 'dealing', 'index' => 0, 'seen' => false, 'visible' => false, 'secret' => $pool[random_int(0, count($pool) - 1)], 'impostor' => random_int(0, count($players) - 1)];
+        $newRoom = ['code' => $room['code'], 'players' => array_values($players), 'categories' => array_values(array_unique($categories)), 'phase' => 'dealing', 'index' => 0, 'seen' => false, 'visible' => false, 'secret' => $pool[random_int(0, count($pool) - 1)], 'impostor' => random_int(0, count($players) - 1)];
+        require_once __DIR__ . '/game-stats.php';
+        try { gamesPlayed(true); }
+        catch (Throwable $error) {
+            error_log('Game counter: ' . $error->getMessage());
+            fail('Nie udało się zapisać nowej gry. Spróbuj ponownie.', 503);
+        }
+        $room = $newRoom;
     } elseif ($action === 'reveal') {
         if ($room['phase'] !== 'dealing') fail('Ta runda nie ma aktywnej karty.');
         $room['seen'] = true; $room['visible'] = true;

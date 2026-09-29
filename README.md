@@ -38,3 +38,11 @@ Hasła są losowane ze wszystkich wpisów zaznaczonych kategorii, a oszust nieza
 Pliki kategorii zawierają ogólny słownik gry, nie sekrety. Mogą być publicznie dostępne na hostingu. Konkretna rola i hasło rundy są przechowywane w sesji PHP, a endpoint stanu ich nie ujawnia. Ta towarzyska gra zakłada uczciwe przekazywanie telefonu; nie jest zabezpieczeniem przed graczem analizującym ruch sieciowy na wspólnym urządzeniu.
 
 Fonty są pobierane z Google Fonts, z lokalnym krojem zastępczym przy braku dostępu. Pozostałe zasoby są lokalne.
+
+## Licznik rozegranych gier
+
+Kafelek w `index.html` pobiera wspólny licznik wszystkich użytkowników z `weaselWords/stats.php` (względem adresu strony startowej, zgodnie z linkiem do gry). Strona startowa jest przeznaczona do umieszczenia poziom wyżej niż katalog gry `weaselWords`.
+
+Runda jest doliczana po każdym poprawnym utworzeniu rundy przyciskiem „Nowa gra” — zarówno z ustawień, jak i z widoku gry. Stop i odświeżenie strony nie zwiększają licznika. Rundy są liczone także wtedy, gdy nie zostaną ukończone. Licznik zaczyna od zera po wdrożeniu; wcześniejsze gry nie były rejestrowane.
+
+PHP musi mieć prawo zapisu w katalogu `data`. Plik `data/games-played.json` powstaje automatycznie, a blokada pliku chroni równoczesne aktualizacje na jednym serwerze. Zachowuj ten plik przy wdrożeniach i uwzględniaj go w kopiach zapasowych; nie jest śledzony przez Git. Gdy odczyt statystyk się nie powiedzie, kafelek ukrywa licznik.
