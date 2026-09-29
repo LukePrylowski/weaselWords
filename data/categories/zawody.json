@@ -1,0 +1,18 @@
+{
+  "name": "Zawody",
+  "emoji": "🧑‍🍳",
+  "words": [
+    { "word": "Lekarz", "hint": "Recepta" },
+    { "word": "Fryzjer", "hint": "Końcówki" },
+    { "word": "Kucharz", "hint": "Wydawka" },
+    { "word": "Strażak", "hint": "Syrena" },
+    { "word": "Weterynarz", "hint": "Mruczenie" },
+    { "word": "Nauczyciel", "hint": "Dziennik" },
+    { "word": "Kurier", "hint": "Dzwonek do drzwi" },
+    { "word": "Fotograf", "hint": "Uśmiech" },
+    { "word": "Mechanik", "hint": "Maska" },
+    { "word": "Aktor", "hint": "Brawa" },
+    { "word": "Kelner", "hint": "Rachunek" },
+    { "word": "Ogrodnik", "hint": "Rękawice" }
+  ]
+}

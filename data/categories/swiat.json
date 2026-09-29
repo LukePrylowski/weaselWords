@@ -1,0 +1,18 @@
+{
+  "name": "Świat",
+  "emoji": "🌍",
+  "words": [
+    { "word": "Paryż", "hint": "Wieża" },
+    { "word": "Nowy Jork", "hint": "Żółte taksówki" },
+    { "word": "Rzym", "hint": "Koloseum" },
+    { "word": "Tokio", "hint": "Skrzyżowanie" },
+    { "word": "Londyn", "hint": "Czerwony autobus" },
+    { "word": "Barcelona", "hint": "Gaudí" },
+    { "word": "Egipt", "hint": "Piramidy" },
+    { "word": "Grecja", "hint": "Białe domy" },
+    { "word": "Islandia", "hint": "Gejzery" },
+    { "word": "Brazylia", "hint": "Karnawał" },
+    { "word": "Australia", "hint": "Kangury" },
+    { "word": "Meksyk", "hint": "Taco" }
+  ]
+}

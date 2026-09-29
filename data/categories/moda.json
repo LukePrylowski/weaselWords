@@ -1,0 +1,18 @@
+{
+  "name": "Moda",
+  "emoji": "🧥",
+  "words": [
+    { "word": "Jeansy", "hint": "Kieszeń" },
+    { "word": "Sneakersy", "hint": "Białe podeszwy" },
+    { "word": "Sukienka", "hint": "Wieszak" },
+    { "word": "Garnitur", "hint": "Wesele" },
+    { "word": "Czapka z daszkiem", "hint": "Słońce" },
+    { "word": "Szalik", "hint": "Pętla" },
+    { "word": "Okulary przeciwsłoneczne", "hint": "Odbicie" },
+    { "word": "Torebka", "hint": "Co tam masz?" },
+    { "word": "Piżama", "hint": "Weekend rano" },
+    { "word": "Płaszcz przeciwdeszczowy", "hint": "Ulewa" },
+    { "word": "Krawat", "hint": "Węzeł" },
+    { "word": "Kapcie", "hint": "Domowe kroki" }
+  ]
+}

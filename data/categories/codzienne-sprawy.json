@@ -1,0 +1,18 @@
+{
+  "name": "Codzienne sprawy",
+  "emoji": "🧺",
+  "words": [
+    { "word": "Poranne korki", "hint": "Stanie" },
+    { "word": "Pranie", "hint": "Kolory" },
+    { "word": "Remont", "hint": "Kurz" },
+    { "word": "Zakupy spożywcze", "hint": "Lista" },
+    { "word": "Drzemka", "hint": "Jeszcze pięć minut" },
+    { "word": "Kurier", "hint": "Paczkomat" },
+    { "word": "Wizyta u dentysty", "hint": "Otwórz szeroko" },
+    { "word": "Kawa na wynos", "hint": "Pokrywka" },
+    { "word": "Gotowanie obiadu", "hint": "Co dziś jemy?" },
+    { "word": "Wynoszenie śmieci", "hint": "Pełny worek" },
+    { "word": "Zgubione klucze", "hint": "Kieszenie" },
+    { "word": "Składanie mebli", "hint": "Instrukcja" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Szkoła",
+  "emoji": "🎒",
+  "words": [
+    { "word": "Sprawdzian", "hint": "Pusta kartka" },
+    { "word": "Dzwonek", "hint": "Koniec lekcji" },
+    { "word": "Wywiadówka", "hint": "Rodzice w ławkach" },
+    { "word": "Plecak", "hint": "Za ciężki" },
+    { "word": "Tablica", "hint": "Kreda" },
+    { "word": "Klasówka", "hint": "Cisza na sali" },
+    { "word": "Stołówka", "hint": "Kompot" },
+    { "word": "Ściąga", "hint": "Mały druk" },
+    { "word": "Lekcja WF-u", "hint": "Strój na zmianę" },
+    { "word": "Zadanie domowe", "hint": "Na jutro" },
+    { "word": "Przerwa", "hint": "Korytarz" },
+    { "word": "Wakacje szkolne", "hint": "Ostatni dzwonek" }
+  ]
+}

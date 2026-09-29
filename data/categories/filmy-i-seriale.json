@@ -1,0 +1,18 @@
+{
+  "name": "Filmy i seriale",
+  "emoji": "🍿",
+  "words": [
+    { "word": "Kevin sam w domu", "hint": "Pułapki" },
+    { "word": "Kiler", "hint": "Pomyłka" },
+    { "word": "Miś", "hint": "Bareja" },
+    { "word": "Ojciec chrzestny", "hint": "Rodzina" },
+    { "word": "Dirty Dancing", "hint": "Podnoszenie" },
+    { "word": "Przyjaciele", "hint": "Central Perk" },
+    { "word": "Gra o tron", "hint": "Żelazny tron" },
+    { "word": "Ranczo", "hint": "Wilkowyje" },
+    { "word": "The Office", "hint": "Biuro" },
+    { "word": "Squid Game", "hint": "Dziecięce zabawy" },
+    { "word": "Top Gun", "hint": "Maverick" },
+    { "word": "Bridgertonowie", "hint": "Plotkara" }
+  ]
+}

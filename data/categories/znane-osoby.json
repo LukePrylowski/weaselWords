@@ -1,0 +1,18 @@
+{
+  "name": "Znane osoby",
+  "emoji": "🌟",
+  "words": [
+    { "word": "Robert Lewandowski", "hint": "Numer dziewięć" },
+    { "word": "Iga Świątek", "hint": "Kort ziemny" },
+    { "word": "Adam Małysz", "hint": "Bułka" },
+    { "word": "Sanah", "hint": "Szampan" },
+    { "word": "Doda", "hint": "Diamenty" },
+    { "word": "Taylor Swift", "hint": "Eras" },
+    { "word": "Beyoncé", "hint": "Queen B" },
+    { "word": "Cristiano Ronaldo", "hint": "Siuuu" },
+    { "word": "Keanu Reeves", "hint": "Pies" },
+    { "word": "Frida Kahlo", "hint": "Autoportret" },
+    { "word": "Mikołaj Kopernik", "hint": "Wstrzymał Słońce" },
+    { "word": "Maryla Rodowicz", "hint": "Festiwal" }
+  ]
+}

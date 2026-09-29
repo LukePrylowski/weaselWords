@@ -1,0 +1,18 @@
+{
+  "name": "Technologia na co dzień",
+  "emoji": "📱",
+  "words": [
+    { "word": "Smartfon", "hint": "Bateria na czerwono" },
+    { "word": "Wideorozmowa", "hint": "Czy mnie słychać?" },
+    { "word": "Kod QR", "hint": "Aparat w telefonie" },
+    { "word": "Hasło", "hint": "Zapomniałem" },
+    { "word": "Aktualizacja", "hint": "Uruchom ponownie" },
+    { "word": "Chmura", "hint": "Kopia zapasowa" },
+    { "word": "Ekran dotykowy", "hint": "Odciski palców" },
+    { "word": "GPS", "hint": "Skręć w lewo" },
+    { "word": "Streaming", "hint": "Jeszcze jeden odcinek" },
+    { "word": "Selfie", "hint": "Przednia kamera" },
+    { "word": "Wiadomość głosowa", "hint": "Słuchawki w kieszeni" },
+    { "word": "Emoji", "hint": "Żółta buźka" }
+  ]
+}

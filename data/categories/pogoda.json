@@ -1,0 +1,18 @@
+{
+  "name": "Pogoda",
+  "emoji": "🌦️",
+  "words": [
+    { "word": "Ulewa", "hint": "Mokre buty" },
+    { "word": "Burza", "hint": "Odliczanie" },
+    { "word": "Tęcza", "hint": "Po deszczu" },
+    { "word": "Mgła", "hint": "Daleko nie widać" },
+    { "word": "Upał", "hint": "Cień" },
+    { "word": "Śnieżyca", "hint": "Zasypane drogi" },
+    { "word": "Przymrozek", "hint": "Skrobanie szyb" },
+    { "word": "Wiatr", "hint": "Potargane włosy" },
+    { "word": "Grad", "hint": "Dach samochodu" },
+    { "word": "Zachmurzenie", "hint": "Brak słońca" },
+    { "word": "Kałuża", "hint": "Przeskok" },
+    { "word": "Prognoza pogody", "hint": "Jutro" }
+  ]
+}
