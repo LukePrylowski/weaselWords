@@ -35,6 +35,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $previous = $room['secret']['word'] ?? null;
         $fresh = array_values(array_filter($pool, fn($w) => $w['word'] !== $previous));
         if ($fresh) $pool = $fresh;
+        // Draw a fresh dealing order for every round and keep it in the session.
+        $players = array_values($players);
+        for ($i = count($players) - 1; $i > 0; $i--) {
+            $j = random_int(0, $i);
+            [$players[$i], $players[$j]] = [$players[$j], $players[$i]];
+        }
         $room = ['code' => $room['code'], 'players' => array_values($players), 'categories' => array_values(array_unique($categories)), 'phase' => 'dealing', 'index' => 0, 'seen' => false, 'visible' => false, 'secret' => $pool[random_int(0, count($pool) - 1)], 'impostor' => random_int(0, count($players) - 1)];
     } elseif ($action === 'reveal') {
         if ($room['phase'] !== 'dealing') fail('Ta runda nie ma aktywnej karty.');

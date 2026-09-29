@@ -33,7 +33,7 @@ Każdy plik `data/categories/*.json` jest osobną kategorią. Nazwa pliku stanow
 
 Dopisuj kolejne obiekty do `words`, rozdzielając je przecinkami. JSON nie obsługuje komentarzy ani przecinka po ostatnim elemencie. Każde hasło musi mieć niepuste `word` i `hint`. Nowa runda odczytuje pliki ponownie, bez restartu serwera. Po dodaniu nowej kategorii odśwież ustawienia, aby zobaczyć jej przycisk. Trwająca runda zachowuje wylosowane hasło. Usunięcie zaznaczonej kategorii wymaga odświeżenia ustawień. Błędne pliki i puste kategorie są pomijane, a nieprawidłowy JSON trafia do logu PHP. Przy publikowaniu zmian na serwerze najlepiej zastąpić cały plik gotową wersją.
 
-Hasła są losowane ze wszystkich wpisów zaznaczonych kategorii, a oszust niezależnie spośród graczy. Jeśli dostępne są różne hasła, bezpośrednio poprzednie nie powtórzy się.
+Hasła są losowane ze wszystkich wpisów zaznaczonych kategorii, a oszust niezależnie spośród graczy. Każda nowa runda losuje też kolejność graczy; odświeżenie strony zachowuje kolejność trwającej rundy. Jeśli dostępne są różne hasła, bezpośrednio poprzednie nie powtórzy się.
 
 Pliki kategorii zawierają ogólny słownik gry, nie sekrety. Mogą być publicznie dostępne na hostingu. Konkretna rola i hasło rundy są przechowywane w sesji PHP, a endpoint stanu ich nie ujawnia. Ta towarzyska gra zakłada uczciwe przekazywanie telefonu; nie jest zabezpieczeniem przed graczem analizującym ruch sieciowy na wspólnym urządzeniu.
 
