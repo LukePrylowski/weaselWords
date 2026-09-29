@@ -23,6 +23,7 @@ $_SESSION['csrf'] ??= bin2hex(random_bytes(24));
       <div class="panel"><div class="section-heading"><h2><span>01</span> Wybierz klimat</h2><button class="text-button" id="select-all">Zaznacz wszystkie</button></div><p class="muted">Z jakich kategorii losujemy hasło?</p><div id="categories" class="categories"></div></div>
       <div class="panel"><div class="section-heading"><h2><span>02</span> Zbierz ekipę</h2><span class="count" id="player-count">0 / 20</span></div><p class="muted">Minimum 3 osoby. Im więcej, tym więcej podejrzeń.</p><form id="player-form"><label class="sr-only" for="player-name">Imię gracza</label><input id="player-name" maxlength="30" placeholder="Jak masz na imię?" autocomplete="off" required><button class="add-button" aria-label="Dodaj gracza">＋</button></form><ul id="players"></ul></div>
       <button class="primary" id="new-game">Nowa gra <span>↗</span></button><p class="footnote">1 oszust · tajne karty · zero zaufania</p>
+      <button class="support-button" id="support-author">Dobra zabawa? Postaw autorowi kawę ☕</button>
     </section>
     <section id="dealing" class="play-screen" hidden>
       <div class="play-heading"><span class="eyebrow" id="progress"></span><h1 id="player-title"></h1><p id="card-instruction">Przekaż telefon tej osobie. Reszta nie podgląda!</p></div>
@@ -33,5 +34,14 @@ $_SESSION['csrf'] ??= bin2hex(random_bytes(24));
     <section id="timer" class="play-screen centered" hidden><span class="eyebrow" id="timer-status">GRA TRWA · OBSERWUJ EKIPĘ</span><h1>Kto kręci?</h1><div class="clock" id="clock" role="timer">00:00</div><p id="timer-copy">Słuchaj skojarzeń. Wypatruj blefu.</p><button class="primary" id="stop">Stop <span>■</span></button><button class="secondary" id="another-game">Nowa gra <span>↻</span></button><button class="secondary" id="edit-room">Powrót do pokoju <span aria-hidden="true">↩</span></button></section>
     <footer>MAŁA GRA. WIELKIE PODEJRZENIA. <span>✦</span></footer>
   </main>
+  <dialog id="support-dialog" aria-labelledby="support-title">
+    <form method="dialog" class="dialog-close"><button aria-label="Zamknij">×</button></form>
+    <h2 id="support-title">Postaw autorowi kawę ☕</h2>
+    <p>Podoba Ci się gra? Możesz wesprzeć autora dowolną kwotą. Dzięki za każdą kawę! 💜</p>
+    <p>W aplikacji swojego banku wybierz <strong>przelew na telefon BLIK</strong> i wpisz numer:</p>
+    <p class="blik-number">692 793 726</p>
+    <button class="primary" id="copy-blik" type="button">Kopiuj numer <span aria-hidden="true">⧉</span></button>
+    <p id="copy-status" role="status" aria-live="polite"></p>
+  </dialog>
 </body>
 </html>

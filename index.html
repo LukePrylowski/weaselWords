@@ -23,6 +23,11 @@
     .name { display: block; font-size: 23px; font-weight: 750; }
     .description { display: block; margin-top: 5px; color: #b8afc9; font-size: 13px; line-height: 1.5; }
     .arrow { margin-left: auto; color: #d7ff72; font-size: 28px; }
+    details { margin-top: 18px; padding: 18px 22px; border: 1px solid #584568; border-radius: 16px; background: #2b223b; }
+    summary { cursor: pointer; color: #d7ff72; font-weight: 700; min-height: 44px; display: flex; align-items: center; }
+    summary:focus-visible { outline: 3px solid #d7ff72; outline-offset: 4px; }
+    details p, details li { font-size: 14px; line-height: 1.7; color: #b8afc9; }
+    details ol { padding-left: 22px; }
     footer { margin-top: 44px; color: #998aaa; font-size: 11px; letter-spacing: 1px; }
     @media (max-width: 360px) { .game { padding: 18px; gap: 12px; } .name { font-size: 21px; } }
     @media (prefers-reduced-motion: reduce) { .game { transition: none; } }
@@ -36,12 +41,23 @@
     <p>Zbierz znajomych i zaczynajcie!</p>
     <nav aria-label="Dostępne gry">
       <!-- Kolejne gry: skopiuj element a i zmień href, ikonę, nazwę oraz opis. -->
-      <a class="game" href="weaselWords/">
+      <a class="game" href="index.php">
         <span class="icon" aria-hidden="true">👀</span>
         <span><span class="name">Kto kręci?</span><span class="description">Tajne hasło, jeden oszust i mnóstwo podejrzeń. Od 3 do 20 graczy.</span></span>
         <span class="arrow" aria-hidden="true">↗</span>
       </a>
     </nav>
+    <details>
+      <summary>Jak grać w „Kto kręci?” 👀</summary>
+      <p>Imprezowa gra w blef dla 3–20 osób. Wystarczy jeden telefon i ekipa, która potrafi zachować pokerową twarz!</p>
+      <ol>
+        <li>Wybierzcie kategorie, dodajcie graczy i kliknijcie „Nowa gra”.</li>
+        <li>Podawajcie sobie telefon. Każdy odkrywa swoją kartę, zapamiętuje ją i zakrywa przed przekazaniem telefonu dalej. Wszyscy poznają to samo hasło — poza oszustem, który dostaje tylko podpowiedź.</li>
+        <li>Kliknijcie START i kolejno podawajcie skojarzenia, nie zdradzając hasła. Oszust musi improwizować!</li>
+        <li>Gdy będziecie gotowi, zatrzymajcie czas i wspólnie wskażcie podejrzanego. Wygrywacie, jeśli wykryjecie oszusta. Jeśli Was zmyli — wygrywa on.</li>
+      </ol>
+      <p>Jeszcze jedna runda? „Nowa gra” losuje nowe hasło, a „Powrót do pokoju” pozwala zmienić kategorie, zachowując graczy.</p>
+    </details>
     <footer>MAŁA GRA. WIELKIE EMOCJE.</footer>
   </main>
 </body>
