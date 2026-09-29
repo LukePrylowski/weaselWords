@@ -31,6 +31,20 @@
     footer { margin-top: 44px; color: #998aaa; font-size: 11px; letter-spacing: 1px; }
     @media (max-width: 360px) { .game { padding: 18px; gap: 12px; } .name { font-size: 21px; } }
     @media (prefers-reduced-motion: reduce) { .game { transition: none; } }
+.support-button{display:block;width:100%;background:#2c253f;border:1px solid #514362;border-radius:14px;padding:14px;color:#d7c9e9;font-size:13px;margin:0 0 16px}
+#support-dialog{width:calc(100% - 32px);max-width:420px;max-height:calc(100svh - 32px);overflow:auto;border:1px solid #71598f;border-radius:22px;background:#231f35;color:#faf8ff;padding:24px;box-shadow:0 20px 70px #0008}
+#support-dialog::backdrop{background:#100b20bb}
+#support-dialog p{font-size:14px;color:#c6bcd6}
+#support-dialog .blik-number{font-size:30px;font-weight:700;letter-spacing:2px;color:#d7ff72;text-align:center;user-select:all}
+.dialog-close{justify-content:flex-end;margin:-12px -12px 0 0}
+.dialog-close button{background:transparent;border:0;font-size:28px;min-width:44px}
+#copy-status{min-height:22px;margin-bottom:0}
+
+    .support-button { cursor: pointer; min-height: 44px; margin-top: 18px; font: inherit; font-size: 13px; }
+    #support-dialog button { cursor: pointer; color: inherit; }
+    #support-dialog .primary { width: 100%; min-height: 48px; border: 0; border-radius: 12px; padding: 12px; background: #d7ff72; color: #171426; font-weight: 700; }
+    .dialog-close { display: flex; }
+    #support-dialog button:focus-visible, .support-button:focus-visible { outline: 3px solid #d7ff72; outline-offset: 4px; }
   </style>
 </head>
 <body>
@@ -47,6 +61,7 @@
         <span class="arrow" aria-hidden="true">↗</span>
       </a>
     </nav>
+    <button class="support-button" type="button" data-support>Dobra zabawa? Postaw autorowi kawę ☕</button>
     <details>
       <summary>Jak grać w „Kto kręci?” 👀</summary>
       <p>Imprezowa gra w blef dla 3–20 osób. Wystarczy jeden telefon i ekipa, która potrafi zachować pokerową twarz!</p>
@@ -60,5 +75,27 @@
     </details>
     <footer>MAŁA GRA. WIELKIE EMOCJE.</footer>
   </main>
+  <dialog id="support-dialog" aria-labelledby="support-title">
+    <form method="dialog" class="dialog-close"><button aria-label="Zamknij">×</button></form>
+    <h2 id="support-title">Postaw autorowi kawę ☕</h2>
+    <p>Podoba Ci się gra? Możesz wesprzeć autora dowolną kwotą. Dzięki za każdą kawę! 💜</p>
+    <p>W aplikacji swojego banku wybierz <strong>przelew na telefon BLIK</strong> i wpisz numer:</p>
+    <p class="blik-number">692 793 726</p>
+    <button class="primary" id="copy-blik" type="button">Kopiuj numer <span aria-hidden="true">⧉</span></button>
+    <p id="copy-status" role="status" aria-live="polite"></p>
+  </dialog>
+  <script>
+document.querySelectorAll('[data-support]').forEach(button => {
+  button.onclick = () => { document.getElementById('copy-status').textContent = ''; document.getElementById('support-dialog').showModal(); };
+});
+document.getElementById('copy-blik').onclick = async () => {
+  try {
+    await navigator.clipboard.writeText('692793726');
+    document.getElementById('copy-status').textContent = 'Numer skopiowany! Otwórz aplikację banku, aby wykonać przelew.';
+  } catch {
+    document.getElementById('copy-status').textContent = 'Nie udało się skopiować. Przepisz numer 692 793 726 w aplikacji banku.';
+  }
+};
+  </script>
 </body>
 </html>

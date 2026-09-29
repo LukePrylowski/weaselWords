@@ -84,13 +84,3 @@ run(async () => {
   if (!state.catalog.length) throw new Error('Brak kategorii. Dodaj poprawne pliki do data/categories i odśwież stronę.');
   render();
 });
-
-$('support-author').onclick = () => { $('copy-status').textContent = ''; $('support-dialog').showModal(); };
-$('copy-blik').onclick = async () => {
-  try {
-    await navigator.clipboard.writeText('692793726');
-    $('copy-status').textContent = 'Numer skopiowany! Otwórz aplikację banku, aby wykonać przelew.';
-  } catch {
-    $('copy-status').textContent = 'Nie udało się skopiować. Przepisz numer 692 793 726 w aplikacji banku.';
-  }
-};
