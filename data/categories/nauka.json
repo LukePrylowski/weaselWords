@@ -1,0 +1,26 @@
+{
+  "name": "Nauka",
+  "emoji": "🔬",
+  "words": [
+    { "word": "Atom", "hint": "Najmniejsza cząstka pierwiastka" },
+    { "word": "Grawitacja", "hint": "Przyciąga do Ziemi" },
+    { "word": "DNA", "hint": "Kod życia" },
+    { "word": "Teleskop", "hint": "Dalekie gwiazdy" },
+    { "word": "Mikroskop", "hint": "Bardzo małe obiekty" },
+    { "word": "Wulkan", "hint": "Lawa" },
+    { "word": "Planeta", "hint": "Krąży wokół gwiazdy" },
+    { "word": "Księżyc", "hint": "Naturalny satelita" },
+    { "word": "Czarna dziura", "hint": "Nawet światło nie ucieknie" },
+    { "word": "Elektryczność", "hint": "Płynie w przewodzie" },
+    { "word": "Magnes", "hint": "Przyciąga metal" },
+    { "word": "Eksperyment", "hint": "Sprawdzenie hipotezy" },
+    { "word": "Laboratorium", "hint": "Probówki" },
+    { "word": "Dinozaur", "hint": "Wyginął miliony lat temu" },
+    { "word": "Fotosynteza", "hint": "Rośliny i światło" },
+    { "word": "Szkielet", "hint": "Konstrukcja ciała" },
+    { "word": "Pierwiastek", "hint": "Pozycja w układzie okresowym" },
+    { "word": "Termometr", "hint": "Mierzy temperaturę" },
+    { "word": "Robot", "hint": "Maszyna wykonująca zadania" },
+    { "word": "Kosmos", "hint": "Ogromna przestrzeń" }
+  ]
+}

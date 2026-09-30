@@ -1,0 +1,26 @@
+{
+  "name": "Historia",
+  "emoji": "🏺",
+  "words": [
+    { "word": "Faraon", "hint": "Władca Egiptu" },
+    { "word": "Piramida", "hint": "Grobowiec z kamienia" },
+    { "word": "Rycerz", "hint": "Zbroja i miecz" },
+    { "word": "Zamek", "hint": "Fosa" },
+    { "word": "Korona", "hint": "Na głowie monarchy" },
+    { "word": "Król", "hint": "Szachowa figura" },
+    { "word": "Wiking", "hint": "Statek i hełm" },
+    { "word": "Koloseum", "hint": "Arena w Rzymie" },
+    { "word": "Mumia", "hint": "Bandaże" },
+    { "word": "Miecz", "hint": "Rycerska broń" },
+    { "word": "Husaria", "hint": "Skrzydła" },
+    { "word": "Rozbiór Polski", "hint": "Trzy państwa" },
+    { "word": "Powstanie", "hint": "Walka o wolność" },
+    { "word": "Niepodległość", "hint": "11 listopada" },
+    { "word": "Rewolucja", "hint": "Wielka zmiana" },
+    { "word": "Dinozaur", "hint": "Skamielina" },
+    { "word": "Tarcza", "hint": "Ochrona wojownika" },
+    { "word": "Kronika", "hint": "Zapis dawnych wydarzeń" },
+    { "word": "Archeolog", "hint": "Szuka pod ziemią" },
+    { "word": "Muzeum", "hint": "Eksponaty" }
+  ]
+}

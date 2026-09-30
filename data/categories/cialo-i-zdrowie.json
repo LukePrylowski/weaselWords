@@ -1,0 +1,26 @@
+{
+  "name": "Ciało i zdrowie",
+  "emoji": "🩺",
+  "words": [
+    { "word": "Serce", "hint": "Pompuje krew" },
+    { "word": "Płuca", "hint": "Oddychanie" },
+    { "word": "Mózg", "hint": "Centrum dowodzenia" },
+    { "word": "Kość", "hint": "Twarda część szkieletu" },
+    { "word": "Mięsień", "hint": "Ćwiczenia go wzmacniają" },
+    { "word": "Stomatolog", "hint": "Kontrola zębów" },
+    { "word": "Lekarz", "hint": "Przyjmuje pacjentów" },
+    { "word": "Pielęgniarka", "hint": "Opieka nad pacjentem" },
+    { "word": "Recepta", "hint": "Lekarz ją wypisuje" },
+    { "word": "Apteka", "hint": "Leki za ladą" },
+    { "word": "Termometr", "hint": "Sprawdza gorączkę" },
+    { "word": "Bandaż", "hint": "Na ranę" },
+    { "word": "Szczepionka", "hint": "Zastrzyk ochronny" },
+    { "word": "Witamina", "hint": "Zdrowy składnik" },
+    { "word": "Gorączka", "hint": "Za wysoka temperatura" },
+    { "word": "Katar", "hint": "Chusteczka" },
+    { "word": "Sen", "hint": "Regeneruje organizm" },
+    { "word": "Higiena", "hint": "Czyste ręce" },
+    { "word": "Sport", "hint": "Ruch dla zdrowia" },
+    { "word": "Stetoskop", "hint": "Osłuchuje pacjenta" }
+  ]
+}
