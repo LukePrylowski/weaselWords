@@ -9,29 +9,35 @@
     :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #171426; color: #faf8ff; }
     * { box-sizing: border-box; }
     body { margin: 0; min-height: 100svh; background: radial-gradient(ellipse at top right, #49305f, transparent 65%); }
-    main { max-width: 680px; margin: auto; padding: max(48px, env(safe-area-inset-top)) 22px max(32px, env(safe-area-inset-bottom)); }
+    main { max-width: 960px; margin: auto; padding: max(48px, env(safe-area-inset-top)) 22px max(32px, env(safe-area-inset-bottom)); }
     .symbol { color: #d7ff72; font-size: 64px; }
     .eyebrow { color: #c3b0e2; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
     h1 { font-size: clamp(38px, 9vw, 60px); line-height: 1.08; letter-spacing: -2px; margin: 20px 0; }
     h1 span { color: #d7ff72; }
     p { color: #b8afc9; line-height: 1.6; }
-    nav { display: grid; gap: 16px; margin-top: 36px; }
-    .game { display: flex; align-items: center; gap: 16px; padding: 24px; min-height: 100px; border: 1px solid #584568; border-radius: 20px; background: #2b223b; color: inherit; text-decoration: none; transition: transform .15s, border-color .15s; -webkit-tap-highlight-color: transparent; }
+    .games { display: grid; gap: 20px; margin-top: 36px; }
+    .game-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .game-tile { min-width: 0; min-height: 0; height: 240px; padding: clamp(14px, 3vw, 28px); border: 1px solid #584568; border-radius: 20px; background: #2b223b; }
+    .game { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; color: inherit; text-align: center; text-decoration: none; transition: transform .15s, border-color .15s; -webkit-tap-highlight-color: transparent; }
+    .game-tagline { color: #b8afc9; font-size: 20px; line-height: 2; font-weight: bold;}
+    .game-info { min-width: 0; overflow-wrap: anywhere; }
+    .game-info summary { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; cursor: pointer; overflow-y: auto; scrollbar-width: thin; }
+    .game-info summary::-webkit-details-marker { display: none; }
+    .game-info summary:hover { border-color: #d7ff72; }
+    .game-info summary:focus-visible { outline: 3px solid #d7ff72; outline-offset: 4px; }
+    .info-title { color: #d7ff72; font-size: clamp(16px, 2.5vw, 23px); font-weight: 700; }
+    .info-description { color: #b8afc9; font-size: clamp(12px, 1.8vw, 15px); line-height: 1.6; }
     .game:hover { transform: translateY(-3px); border-color: #d7ff72; }
     .game:focus-visible { outline: 3px solid #d7ff72; outline-offset: 5px; }
-    .icon { font-size: 36px; }
-    .name { display: block; font-size: 23px; font-weight: 750; }
-    .description { display: block; margin-top: 5px; color: #b8afc9; font-size: 13px; line-height: 1.5; }
+    .icon { font-size: clamp(36px, 7vw, 64px); line-height: 1; }
+    .name { display: block; font-size: clamp(18px, 3.5vw, 32px); font-weight: 750; }
     .game-count { display: block; margin-top: 10px; color: #d7ff72; font-size: 12px; font-weight: 600; }
     .game-count[hidden] { display: none; }
-    .arrow { margin-left: auto; color: #d7ff72; font-size: 28px; }
-    details { margin-top: 18px; padding: 18px 22px; border: 1px solid #584568; border-radius: 16px; background: #2b223b; }
-    summary { cursor: pointer; color: #d7ff72; font-weight: 700; min-height: 44px; display: flex; align-items: center; }
-    summary:focus-visible { outline: 3px solid #d7ff72; outline-offset: 4px; }
+    .arrow { position: absolute; top: 12px; right: 16px; color: #d7ff72; font-size: 24px; }
     details p, details li { font-size: 14px; line-height: 1.7; color: #b8afc9; }
     details ol { padding-left: 22px; }
     footer { margin-top: 44px; color: #998aaa; font-size: 11px; letter-spacing: 1px; }
-    @media (max-width: 360px) { .game { padding: 18px; gap: 12px; } .name { font-size: 21px; } }
+    @media (max-width: 480px) { main { padding-left: 14px; padding-right: 14px; } .game-row { gap: 10px; } .game-tile { border-radius: 16px; } .game { gap: 8px; } .game-count { font-size: 10px; margin-top: 4px; } }
     @media (prefers-reduced-motion: reduce) { .game { transition: none; } }
 .support-button{display:block;width:100%;background:#2c253f;border:1px solid #514362;border-radius:14px;padding:14px;color:#d7c9e9;font-size:13px;margin:0 0 16px}
 #support-dialog{width:calc(100% - 32px);max-width:420px;max-height:calc(100svh - 32px);overflow:auto;border:1px solid #71598f;border-radius:22px;background:#231f35;color:#faf8ff;padding:24px;box-shadow:0 20px 70px #0008}
@@ -55,26 +61,32 @@
     <p class="eyebrow">DOBRA EKIPA. DOBRA ZABAWA.</p>
     <h1>Wybierz grę.<br><span>Rozkręć imprezę.</span></h1>
     <p>Zbierz znajomych i zaczynajcie!</p>
-    <nav aria-label="Dostępne gry">
-      <!-- Kolejne gry: skopiuj element a i zmień href, ikonę, nazwę oraz opis. -->
-      <a class="game" href="weaselWords/index.php">
-        <span class="icon" aria-hidden="true">👀</span>
-        <span><span class="name">Kto kręci?</span><span class="description">Tajne hasło, jeden oszust i mnóstwo podejrzeń. Od 3 do 20 graczy.</span><span class="game-count" id="games-played" hidden></span></span>
-        <span class="arrow" aria-hidden="true">↗</span>
-      </a>
-    </nav>
+    <section class="games" aria-label="Dostępne gry">
+      <!-- Kolejne gry: skopiuj cały game-row z kafelkiem linku i kafelkiem opisu. -->
+      <div class="game-row">
+        <a class="game game-tile" href="weaselWords/index.php">
+          <span class="icon" aria-hidden="true">👀</span>
+          <span class="name">Kto kręci?</span>
+          <span class="game-tagline">Tajne hasło. Jeden oszust.</span>
+          <span class="game-count" id="games-played" hidden></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <details class="game-info">
+          <summary class="game-tile">
+            <span class="info-title">Jak grać w „Kto kręci?” 👀</span>
+            <span class="info-description">Mnóstwo podejrzeń i gra w blef dla 3–20 osób. Wystarczy jeden telefon i ekipa, która potrafi zachować pokerową twarz!</span>
+          </summary>
+            <ol>
+              <li>Wybierzcie kategorie, dodajcie graczy i kliknijcie „Nowa gra”.</li>
+              <li>Podawajcie sobie telefon. Każdy odkrywa swoją kartę, zapamiętuje ją i zakrywa przed przekazaniem telefonu dalej. Wszyscy poznają to samo hasło — poza oszustem, który dostaje tylko podpowiedź.</li>
+              <li>Kliknijcie START i kolejno podawajcie skojarzenia, nie zdradzając hasła. Oszust musi improwizować!</li>
+              <li>Gdy będziecie gotowi, zatrzymajcie czas i wspólnie wskażcie podejrzanego. Wygrywacie, jeśli wykryjecie oszusta. Jeśli Was zmyli — wygrywa on.</li>
+            </ol>
+            <p>Jeszcze jedna runda? „Nowa gra” losuje nowe hasło, a „Powrót do pokoju” pozwala zmienić kategorie, zachowując graczy.</p>
+        </details>
+      </div>
+    </section>
     <button class="support-button" type="button" data-support>Dobra zabawa? Postaw autorowi kawę ☕</button>
-    <details>
-      <summary>Jak grać w „Kto kręci?” 👀</summary>
-      <p>Imprezowa gra w blef dla 3–20 osób. Wystarczy jeden telefon i ekipa, która potrafi zachować pokerową twarz!</p>
-      <ol>
-        <li>Wybierzcie kategorie, dodajcie graczy i kliknijcie „Nowa gra”.</li>
-        <li>Podawajcie sobie telefon. Każdy odkrywa swoją kartę, zapamiętuje ją i zakrywa przed przekazaniem telefonu dalej. Wszyscy poznają to samo hasło — poza oszustem, który dostaje tylko podpowiedź.</li>
-        <li>Kliknijcie START i kolejno podawajcie skojarzenia, nie zdradzając hasła. Oszust musi improwizować!</li>
-        <li>Gdy będziecie gotowi, zatrzymajcie czas i wspólnie wskażcie podejrzanego. Wygrywacie, jeśli wykryjecie oszusta. Jeśli Was zmyli — wygrywa on.</li>
-      </ol>
-      <p>Jeszcze jedna runda? „Nowa gra” losuje nowe hasło, a „Powrót do pokoju” pozwala zmienić kategorie, zachowując graczy.</p>
-    </details>
     <footer>MAŁA GRA. WIELKIE EMOCJE.</footer>
   </main>
   <dialog id="support-dialog" aria-labelledby="support-title">
