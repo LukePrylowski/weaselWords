@@ -13,6 +13,8 @@
     { "word": "Samolot", "hint": "Odprawa" },
     { "word": "Kamper", "hint": "Postój" },
     { "word": "Skuter", "hint": "Kask i korek" },
-    { "word": "Kolejka linowa", "hint": "Widok z góry" }
+    { "word": "Kolejka linowa", "hint": "Widok z góry" },
+    { "word": "Rondo", "hint": "Kierunkowskaz" },
+    { "word": "Stacja benzynowa", "hint": "Pełny bak" }
   ]
 }

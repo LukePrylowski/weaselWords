@@ -21,6 +21,8 @@
     { "word": "Reklamówka", "hint": "Na zakupy" },
     { "word": "Przymierzalnia", "hint": "Sprawdzisz rozmiar" },
     { "word": "Gwarancja", "hint": "Naprawa po zakupie" },
-    { "word": "Zwrot", "hint": "Oddanie produktu" }
+    { "word": "Zwrot", "hint": "Oddanie produktu" },
+    { "word": "Subskrypcja", "hint": "Co miesiąc" },
+    { "word": "Kod rabatowy", "hint": "Koszyk online" }
   ]
 }

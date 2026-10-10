@@ -13,6 +13,8 @@
     { "word": "Streaming", "hint": "Jeszcze jeden odcinek" },
     { "word": "Selfie", "hint": "Przednia kamera" },
     { "word": "Wiadomość głosowa", "hint": "Słuchawki w kieszeni" },
-    { "word": "Emoji", "hint": "Żółta buźka" }
+    { "word": "Emoji", "hint": "Żółta buźka" },
+    { "word": "Bluetooth", "hint": "Parowanie" },
+    { "word": "Powerbank", "hint": "Plan B" }
   ]
 }

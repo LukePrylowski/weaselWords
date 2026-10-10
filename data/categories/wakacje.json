@@ -13,6 +13,8 @@
     { "word": "Mapa turystyczna", "hint": "Zgubiona droga" },
     { "word": "Przewodnik", "hint": "Ciekawe historie" },
     { "word": "Kemping", "hint": "Sąsiedzi za ścianą z materiału" },
-    { "word": "Podróż samochodem", "hint": "Postój na stacji" }
+    { "word": "Podróż samochodem", "hint": "Postój na stacji" },
+    { "word": "Opóźniony lot", "hint": "Tablica odlotów" },
+    { "word": "Rejs statkiem", "hint": "Pokład" }
   ]
 }

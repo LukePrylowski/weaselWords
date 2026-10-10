@@ -21,6 +21,8 @@
     { "word": "Sen", "hint": "Regeneruje organizm" },
     { "word": "Higiena", "hint": "Czyste ręce" },
     { "word": "Sport", "hint": "Ruch dla zdrowia" },
-    { "word": "Stetoskop", "hint": "Osłuchuje pacjenta" }
+    { "word": "Stetoskop", "hint": "Osłuchuje pacjenta" },
+    { "word": "Migrena", "hint": "Ciemny pokój" },
+    { "word": "Alergia", "hint": "Wiosna" }
   ]
 }

@@ -13,6 +13,8 @@
     { "word": "Lekcja WF-u", "hint": "Strój na zmianę" },
     { "word": "Zadanie domowe", "hint": "Na jutro" },
     { "word": "Przerwa", "hint": "Korytarz" },
-    { "word": "Wakacje szkolne", "hint": "Ostatni dzwonek" }
+    { "word": "Wakacje szkolne", "hint": "Ostatni dzwonek" },
+    { "word": "Projekt grupowy", "hint": "Kto co robi?" },
+    { "word": "Wycieczka szkolna", "hint": "Lista obecności" }
   ]
 }

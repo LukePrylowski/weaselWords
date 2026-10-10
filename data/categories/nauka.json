@@ -21,6 +21,8 @@
     { "word": "Pierwiastek", "hint": "Pozycja w układzie okresowym" },
     { "word": "Termometr", "hint": "Mierzy temperaturę" },
     { "word": "Robot", "hint": "Maszyna wykonująca zadania" },
-    { "word": "Kosmos", "hint": "Ogromna przestrzeń" }
+    { "word": "Kosmos", "hint": "Ogromna przestrzeń" },
+    { "word": "Tęcza", "hint": "Kolory po deszczu" },
+    { "word": "Bateria", "hint": "Prąd w drodze" }
   ]
 }

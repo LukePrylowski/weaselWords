@@ -13,6 +13,8 @@
     { "word": "Mechanik", "hint": "Maska" },
     { "word": "Aktor", "hint": "Brawa" },
     { "word": "Kelner", "hint": "Rachunek" },
-    { "word": "Ogrodnik", "hint": "Rękawice" }
+    { "word": "Ogrodnik", "hint": "Rękawice" },
+    { "word": "Piekarz", "hint": "Zapach o świcie" },
+    { "word": "Architekt", "hint": "Linijka" }
   ]
 }

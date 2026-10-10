@@ -13,6 +13,8 @@
     { "word": "Piwnica", "hint": "Słoiki" },
     { "word": "Strych", "hint": "Pudła" },
     { "word": "Pokój gościnny", "hint": "Rozkładana kanapa" },
-    { "word": "Pralnia", "hint": "Wirowanie" }
+    { "word": "Pralnia", "hint": "Wirowanie" },
+    { "word": "Zmywarka", "hint": "Jeszcze jeden talerz" },
+    { "word": "Ogrzewanie", "hint": "Rachunek zimą" }
   ]
 }

@@ -13,6 +13,8 @@
     { "word": "Grad", "hint": "Dach samochodu" },
     { "word": "Zachmurzenie", "hint": "Brak słońca" },
     { "word": "Kałuża", "hint": "Przeskok" },
-    { "word": "Prognoza pogody", "hint": "Jutro" }
+    { "word": "Prognoza pogody", "hint": "Jutro" },
+    { "word": "Szron", "hint": "Poranny błysk" },
+    { "word": "Zorza polarna", "hint": "Niebo tańczy" }
   ]
 }

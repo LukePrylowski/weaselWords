@@ -21,6 +21,8 @@
     { "word": "Tarcza", "hint": "Ochrona wojownika" },
     { "word": "Kronika", "hint": "Zapis dawnych wydarzeń" },
     { "word": "Archeolog", "hint": "Szuka pod ziemią" },
-    { "word": "Muzeum", "hint": "Eksponaty" }
+    { "word": "Muzeum", "hint": "Eksponaty" },
+    { "word": "Wielki Mur Chiński", "hint": "Długa budowa" },
+    { "word": "Hieroglify", "hint": "Znaki na ścianach" }
   ]
 }

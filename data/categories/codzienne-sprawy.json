@@ -13,6 +13,8 @@
     { "word": "Gotowanie obiadu", "hint": "Co dziś jemy?" },
     { "word": "Wynoszenie śmieci", "hint": "Pełny worek" },
     { "word": "Zgubione klucze", "hint": "Kieszenie" },
-    { "word": "Składanie mebli", "hint": "Instrukcja" }
+    { "word": "Składanie mebli", "hint": "Instrukcja" },
+    { "word": "Awaria prądu", "hint": "Świeczka" },
+    { "word": "Kolejka do lekarza", "hint": "Numerek" }
   ]
 }

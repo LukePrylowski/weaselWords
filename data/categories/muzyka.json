@@ -13,6 +13,8 @@
     { "word": "DJ", "hint": "Mikser" },
     { "word": "Rap", "hint": "Rymy" },
     { "word": "Rock", "hint": "Głośne gitary" },
-    { "word": "Chór", "hint": "Wiele głosów" }
+    { "word": "Chór", "hint": "Wiele głosów" },
+    { "word": "Saksofon", "hint": "Wieczorny klub" },
+    { "word": "Słuchawki", "hint": "Własny świat" }
   ]
 }
